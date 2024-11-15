@@ -2,63 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <link href="style.css" rel="stylesheet" />
+  <title>Help Page</title>
+  <style>
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Body Styling */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+
+    /* Container styling */
+    .govuk-form-group {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        max-width: 600px;
+    }
+
+    /* Heading Styling */
+    h1 {
+        font-size: 2rem;
+        color: #005ea5;
+        margin-bottom: 1rem;
+    }
+
+    /* Email Styling */
+    p {
+        font-size: 1rem;
+        color: #4a4a4a;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Radio Button Styling */
+    .govuk-radios {
+        margin-top: 1rem;
+    }
+
+    .govuk-radios__item {
+        margin-bottom: 1rem;
+    }
+
+    .govuk-radios__label {
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .govuk-radios__input {
+        margin-right: 0.5rem;
+    }
+
+    /* Button Styling */
+    .govuk-button-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .govuk-button {
+        background-color: #005ea5;
+        color: white;
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .govuk-button:hover {
+        background-color: #003a6b;
+    }
+
+    .govuk-link {
+        color: #005ea5;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .govuk-link:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+        .govuk-form-group {
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .govuk-button, .govuk-link {
+            font-size: 0.9rem;
+            padding: 0.6rem 1.2rem;
+        }
+    }
+  </style>
 </head>
 <body>
 
+  <div class="govuk-form-group">
+    <h1>Please help me</h1>
+    <p>soulmiles@tutamail.com</p>
 
-
-<h1>Please help me</h1>
-
-
-<p>soulmiles@tutamail.com</p>
-
-<div class="govuk-form-group">
     <fieldset class="govuk-fieldset">
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-        <h1 class="govuk-fieldset__heading">
-          Where do you live?
-        </h1>
+        <h1 class="govuk-fieldset__heading">Where do you live?</h1>
       </legend>
       <div class="govuk-radios" data-module="govuk-radios">
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
-          <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
-            England
-          </label>
+          <label class="govuk-label govuk-radios__label" for="whereDoYouLive">England</label>
         </div>
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland">
-          <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
-            Scotland
-          </label>
+          <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">Scotland</label>
         </div>
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="whereDoYouLive-3" name="whereDoYouLive" type="radio" value="wales">
-          <label class="govuk-label govuk-radios__label" for="whereDoYouLive-3">
-            Wales
-          </label>
+          <label class="govuk-label govuk-radios__label" for="whereDoYouLive-3">Wales</label>
         </div>
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="whereDoYouLive-4" name="whereDoYouLive" type="radio" value="northern-ireland">
-          <label class="govuk-label govuk-radios__label" for="whereDoYouLive-4">
-            Northern Ireland
-          </label>
+          <label class="govuk-label govuk-radios__label" for="whereDoYouLive-4">Northern Ireland</label>
         </div>
       </div>
     </fieldset>
 
-
     <div class="govuk-button-group">
-        <button type="submit" class="govuk-button" data-module="govuk-button">
-          Continue
-        </button>
-        <a class="govuk-link"
-      </div>
+      <button type="submit" class="govuk-button" data-module="govuk-button">Please click cancel</button>
+      <a class="govuk-link" href="https://www.ucl.ac.uk/prejudice-in-power/sites/prejudice_in_power/files/styles/small_image/public/soul_miles.jpg?itok=A8odcPlW">Cancel</a>
+    </div>
   </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>
-  </script>
+
 </body>
 </html>
